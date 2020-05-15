@@ -1,0 +1,159 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+* {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+body {
+    background-color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 1.1rem;
+    color: white;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+   /* background: grey;*/
+    background: black;
+    border-bottom: 2px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px;
+    z-index: 10;
+}
+
+#header-img {
+    height: 2rem;
+    width: 2rem;
+}
+
+ul, .nav-link, li {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+#nav-bar {
+    width: 100%;
+}
+
+#nav-ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+#wrapper-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+h1 {
+    margin: 4rem 0 1rem 0;
+}
+
+#video {
+    width: 512px;
+    height: 288px;
+}
+
+#form {
+    margin: 1.5rem 0 3rem 0;
+}
+
+#email {
+    padding: 3px;
+    width: 12rem;
+}
+
+#submit {
+    padding: 3px; 
+    cursor: pointer;
+}
+
+#overview {
+    font-size: 2rem;
+    width: 75%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    margin-top: -40px;
+}
+
+#overview-img {
+    width: 155%;
+    height: auto;
+}
+
+.features-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3rem 0 2rem 0;
+}
+
+.features-h2 {
+    align-self: flex-start;
+    width: 35%;
+}
+
+.features-ul {
+    width: 65%;
+}
+
+.product {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 25%;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    background: white;
+    color: black;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    width: 60%;
+}
+
+@media (max-width: 1360px)  { 
+    #header, #wrapper-div {
+        width: 100%;
+    }
+    .features-section {
+        padding: 1rem;
+        margin: 3rem 0 1rem 0;
+    }
+    #pricing {
+        width: 85%;
+    }
+    
+}
+
+
+
